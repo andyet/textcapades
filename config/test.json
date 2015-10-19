@@ -1,0 +1,12 @@
+{
+  "hapi": {
+    "host": null,
+    "port": null,
+    "logEvents": {
+      "log": "no",
+      "request": "no",
+      "response": "no",
+      "error": "*"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+extends ./layout
+
+block body
+
+  .container
+
+    h1 Start the story
+
+    p While the original textcapade was played over SMS, we have recreated the story here so you can play in your browser.
+
+    p Enter your name to get started
+
+    form(method='POST' action='/api/user')
+      input(type='hidden' name='crumb' value=crumb)
+      label(for='name') What should we call you?
+      input.form-element(name='name' type='text' required placeholder='Awesome Artificer')
+      button.button.button-outlined-themed(type='submit') Play
